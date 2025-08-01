@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom keyframes for pulse glow animation */
+@keyframes pulseGlow {
+  /* Start and end: normal size + faint glow */
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+  /* Midpoint: slightly bigger + stronger glow */
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Animation class */
+.animate-pulseGlow {
+  /* Play the keyframes forever, taking 2 seconds each cycle */
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap');
+
+/* Base reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
