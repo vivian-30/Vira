@@ -10,8 +10,8 @@ import { Routes, Route } from 'react-router-dom'
 
 
 // Supabase configuration - Replace with your actual Supabase credentials
-const supabaseUrl = ' https://ffxhwhpcymfbpntaftls.supabase.co'; // Your actual Project URL
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZmeGh3aHBjeW1mYnBudGFmdGxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM2OTQyMTMsImV4cCI6MjA2OTI3MDIxM30.S79kB2yoYMqWoDwJnKlMgLTOs9-bidtRGCzb1deLpVs'; // Your actual anon public key
+const supabaseUrl = '#'; // Your actual Project URL
+const supabaseAnonKey = '#'
 // ... rest of your code from the artifact ...
 
 function App() {
